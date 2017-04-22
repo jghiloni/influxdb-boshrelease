@@ -14,7 +14,6 @@ touch $REPO/.gitmodules
 # so we can start from scratch
 go get -d -v github.com/influxdata/influxdb/cmd/influxd
 go get -d -v github.com/influxdata/influxdb/cmd/influx
-go get -d -v github.com/influxdata/influxdb-relay
 
 # set dependency versions with gdm
 cd $GOPATH/src/github.com/influxdata/influxdb
@@ -23,6 +22,5 @@ gdm restore
 
 # sync errything
 ( gosub list -a github.com/influxdata/influxdb/cmd/influxd && \
-  gosub list -a github.com/influxdata/influxdb/cmd/influx && \
-  gosub list -a github.com/influxdata/influxdb-relay) | \
+  gosub list -a github.com/influxdata/influxdb/cmd/influx ) | \
   xargs gosub sync -r $REPO -g $GOPATH
