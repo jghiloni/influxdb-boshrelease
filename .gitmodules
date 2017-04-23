@@ -53,3 +53,15 @@
 [submodule "src/influxdb/src/gopkg.in/fatih/pool.v2"]
 	path = src/influxdb/src/gopkg.in/fatih/pool.v2
 	url = https://gopkg.in/fatih/pool.v2
+[submodule "src/influxdb/src/github.com/naoina/go-stringutil"]
+	path = src/influxdb/src/github.com/naoina/go-stringutil
+	url = https://github.com/naoina/go-stringutil
+	branch = master
+[submodule "src/influxdb/src/github.com/naoina/toml"]
+	path = src/influxdb/src/github.com/naoina/toml
+	url = https://github.com/naoina/toml
+	branch = master
+[submodule "src/influxdb/src/github.com/influxdata/influxdb-relay"]
+	path = src/influxdb/src/github.com/influxdata/influxdb-relay
+	url = https://github.com/influxdata/influxdb-relay
+	branch = master
